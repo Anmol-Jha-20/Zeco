@@ -48,30 +48,27 @@ export default function AboutSection() {
               </h2>
 
               <p className="text-lg sm:text-xl font-medium text-gray-800 leading-relaxed mb-6 lg:mb-8">
-                Zeco Aircon is the leading HVAC and Air distribution solution
-                provider present in India, providing to the world, since 1989.
+                Spire AirTech Pvt Ltd is a privately-owned business,
+                Sister-concern Company of N&K Engineering (Established in 2017).
               </p>
             </div>
 
             <div className="space-y-4 lg:space-y-6">
               <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-                We have been consistently providing comfortable, clean, and
-                infection-free air to all the corporates and business houses of
-                India along with other parts of the world through the range of
-                world-class HVAC products and patented air purification
-                technologies. We started from a small factory in Todapur
-                village, New Delhi, with ten employees to three state-of-art
-                factories in Bahadurgarh, Malur, and Lahe and ten sales offices
-                in India, and now expanding our operations in Middle East and
-                Africa, with over 1000 devoted employees is our growth journey
-                of 34 years.
+                We specialize in and offer a full range of services including
+                HVAC supply, Ventilation systems, Maintenance repairs,
+                Extraction systems, Commercial HVAC and Turnkey solutions.
+                Partnered with prestigious brands such as Mitsubishi, Daikin,
+                Carrier and Blue Star. Samsung, LG, Our highly trained and
+                skilled technicians will ensure that each installation exceeds
+                your expectations. Our dedicated sales and after-sale management
+                team will ensure that you will alwaysreceive a high level of
+                service.
               </p>
 
               <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-                All ranges of products manufactured by us are competent to meet
-                international standards, requirements, and testing. The products
-                are duly tested with a great eye on quality under the harshest
-                conditions to withstand the toughest environment.
+                Trust us to deliver reliable solutions, exceptional service, and
+                peace of mind for all your HVAC needs.
               </p>
             </div>
 

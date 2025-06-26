@@ -333,7 +333,7 @@ export default function HomePage() {
               <div className="flex-shrink-0">
                 <div className="flex items-center">
                   <div className="text-2xl md:text-3xl font-bold text-blue-600">
-                    ZECO
+                    Spire AirTech
                   </div>
                   {/* <div className="ml-2 text-xs text-gray-600">
                   Part of Munters
@@ -344,40 +344,53 @@ export default function HomePage() {
               <nav className="hidden md:flex space-x-8">
                 <a
                   href="#home"
-                  className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+                  className="text-gray-700 hover:text-red-500 font-medium transition-colors"
                 >
                   HOME
                 </a>
 
                 {/* Products Dropdown */}
+
                 <div
                   className="relative"
-                  onMouseEnter={() => setHoveredDropdown("products")}
+                  onMouseEnter={() => setHoveredDropdown("projects")}
                   onMouseLeave={() => setHoveredDropdown(null)}
                 >
-                  <button className="flex items-center text-gray-700 hover:text-blue-600 font-medium transition-colors">
-                    PRODUCTS
+                  <button className="flex items-center text-gray-700 hover:text-red-500 font-medium transition-colors">
+                    PROJECTS
                     <ChevronDown className="ml-1 h-4 w-4" />
                   </button>
-                  {hoveredDropdown === "products" && (
-                    <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-2 z-50">
+
+                  {/* Dropdown menu */}
+                  {hoveredDropdown === "projects" && (
+                    <div
+                      className="absolute top-full left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-2 z-50"
+                      onMouseEnter={() => setHoveredDropdown("projects")}
+                      onMouseLeave={() => setHoveredDropdown(null)}
+                    >
                       <a
                         href="#air-conditioning"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                       >
-                        Air Conditioning
+                        CHILLERS
                       </a>
                       <a
                         href="#air-distribution"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                       >
-                        Air Distribution
+                        VRV AIRCONDITIONING SYSTEMS
                       </a>
                       <a
                         href="#pre-insulated-pipes"
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                       >
-                        Pre-Insulated Pipes
+                        FDV and FAN
+                      </a>
+                      <a
+                        href="#pre-insulated-pipes"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      >
+                        DUCTED SPLIT AIRCONDITIONERS
                       </a>
                     </div>
                   )}
@@ -389,7 +402,7 @@ export default function HomePage() {
                   onMouseEnter={() => setHoveredDropdown("about")}
                   onMouseLeave={() => setHoveredDropdown(null)}
                 >
-                  <button className="flex items-center text-gray-700 hover:text-blue-600 font-medium transition-colors">
+                  <button className="flex items-center text-gray-700 hover:text-red-500 font-medium transition-colors">
                     ABOUT
                     <ChevronDown className="ml-1 h-4 w-4" />
                   </button>
@@ -418,14 +431,26 @@ export default function HomePage() {
                 </div>
 
                 <a
+                  href="#manufacturing"
+                  className="text-gray-700 hover:text-red-500 font-medium transition-colors"
+                >
+                  MANUFACTURING
+                </a>
+                <a
+                  href="#services"
+                  className="text-gray-700 hover:text-red-500 font-medium transition-colors"
+                >
+                  SERVICES
+                </a>
+                <a
                   href="#blogs"
-                  className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+                  className="text-gray-700 hover:text-red-500 font-medium transition-colors"
                 >
                   BLOGS
                 </a>
                 <a
                   href="#contact"
-                  className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+                  className="text-gray-700 hover:text-red-500 font-medium transition-colors"
                 >
                   CONTACT
                 </a>
@@ -463,16 +488,16 @@ export default function HomePage() {
                 <div className="px-4 py-2 space-y-2">
                   <a
                     href="#home"
-                    className="block py-2 text-gray-700 hover:text-blue-600 font-medium"
+                    className="block py-2 text-gray-700 hover:text-red-500 font-medium"
                   >
                     HOME
                   </a>
                   <div className="py-2">
                     <button
                       onClick={() => setIsProductsOpen(!isProductsOpen)}
-                      className="flex items-center w-full text-left text-gray-700 hover:text-blue-600 font-medium"
+                      className="flex items-center w-full text-left text-gray-700 hover:text-red-500 font-medium"
                     >
-                      PRODUCTS
+                      PROJECTS
                       <ChevronDown className="ml-1 h-4 w-4" />
                     </button>
                     {isProductsOpen && (
@@ -481,19 +506,25 @@ export default function HomePage() {
                           href="#air-conditioning"
                           className="block py-1 text-sm text-gray-600"
                         >
-                          Air Conditioning
+                          CHILLERS
                         </a>
                         <a
                           href="#air-distribution"
                           className="block py-1 text-sm text-gray-600"
                         >
-                          Air Distribution
+                          VRV AIRCONDITIONING SYSTEMS
                         </a>
                         <a
                           href="#pre-insulated-pipes"
                           className="block py-1 text-sm text-gray-600"
                         >
-                          Pre-Insulated Pipes
+                          FDV and FAN
+                        </a>
+                        <a
+                          href="#pre-insulated-pipes"
+                          className="block py-1 text-sm text-gray-600"
+                        >
+                          DUCTED SPLIT AIRCONDITIONERS
                         </a>
                       </div>
                     )}
@@ -501,7 +532,7 @@ export default function HomePage() {
                   <div className="py-2">
                     <button
                       onClick={() => setIsAboutOpen(!isAboutOpen)}
-                      className="flex items-center w-full text-left text-gray-700 hover:text-blue-600 font-medium"
+                      className="flex items-center w-full text-left text-gray-700 hover:text-red-500 font-medium"
                     >
                       ABOUT
                       <ChevronDown className="ml-1 h-4 w-4" />
@@ -530,14 +561,26 @@ export default function HomePage() {
                     )}
                   </div>
                   <a
+                    href="#manufacturing"
+                    className="block py-2 text-gray-700 hover:text-red-500 font-medium"
+                  >
+                    MANUFACTURING
+                  </a>
+                  <a
+                    href="#services"
+                    className="block py-2 text-gray-700 hover:text-red-500 font-medium"
+                  >
+                    SERVICES
+                  </a>
+                  <a
                     href="#blogs"
-                    className="block py-2 text-gray-700 hover:text-blue-600 font-medium"
+                    className="block py-2 text-gray-700 hover:text-red-500 font-medium"
                   >
                     BLOGS
                   </a>
                   <a
                     href="#contact"
-                    className="block py-2 text-gray-700 hover:text-blue-600 font-medium"
+                    className="block py-2 text-gray-700 hover:text-red-500 font-medium"
                   >
                     CONTACT
                   </a>
@@ -557,10 +600,10 @@ export default function HomePage() {
 
           <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
             <h1 className="text-white text-2xl md:text-3xl font-extrabold mb-4 leading-tight tracking-wide">
-              Indian Made, Globally Certified, Universally Installed!
+              Air conditioning is our main line of business and specialization
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 max-w-2xl mx-auto">
-              Zeco Air Management System & Solutions
+              Spire AirTech Management System & Solutions
             </p>
             <button className="bg-red-500 hover:bg-blue-600 text-white font-semibold py-3 px-8 rounded-full text-lg transition-all cursor-pointer duration-300 transform hover:scale-105 shadow-lg">
               Get Free Consultation
