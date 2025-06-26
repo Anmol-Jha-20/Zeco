@@ -157,11 +157,11 @@ const ZecoFooter = () => {
           <div className="space-y-8">
             <div>
               <h2 className="text-2xl font-bold mb-6 text-white">
-                ZECO AIRCON
+                Spire AirTech
               </h2>
               <div className="w-12 h-0.5 bg-white mb-8"></div>
               <p className="text-blue-100 leading-relaxed text-lg">
-                ZECO Aircon is Pioneer in manufacturing of central air
+                Spire AirTech is Pioneer in manufacturing of central air
                 conditioning & air distribution systems.
               </p>
             </div>
@@ -318,7 +318,7 @@ const ZecoFooter = () => {
         <div className="max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
             <p className="text-blue-100 text-center sm:text-left">
-              ©2022 All Rights Reserved | Zeco Aircon Ltd.
+              ©2025 All Rights Reserved | Spire AirTech Ltd.
             </p>
             <a
               href="#sitemap"

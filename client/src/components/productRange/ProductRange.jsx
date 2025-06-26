@@ -23,14 +23,14 @@ const ProductRange = () => {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden mb-6 transition-transform duration-300 hover:scale-105">
               <div className="aspect-square bg-gray-100 flex items-center justify-center p-8">
                 <img
-                  src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                  src="https://www.pharmaengineers.in/images/smart-air-handling-unit-r-manufacturers.webp"
                   alt="Air Conditioning Unit - HVAC system for temperature control"
                   className="w-full h-full object-cover rounded"
                 />
               </div>
             </div>
             <h2 className="text-2xl font-semibold text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
-              Air Conditioning
+              Smart Air Handling Unit
             </h2>
           </div>
 
@@ -39,14 +39,14 @@ const ProductRange = () => {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden mb-6 transition-transform duration-300 hover:scale-105">
               <div className="aspect-square bg-gray-100 flex items-center justify-center p-8">
                 <img
-                  src="https://zecoaircon.com/wp-content/uploads/2022/07/Ducts.png"
+                  src="https://5.imimg.com/data5/SELLER/Default/2023/12/367834520/NE/XD/SC/2417501/pharmaceuticals-air-conditioning-system.jpg"
                   alt="Air Distribution System - Ventilation ducts and airflow management"
                   className="w-full h-full object-cover rounded"
                 />
               </div>
             </div>
             <h2 className="text-2xl font-semibold text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
-              Air Distribution
+              Pharma Air Handling Unit
             </h2>
           </div>
 
@@ -55,14 +55,56 @@ const ProductRange = () => {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden mb-6 transition-transform duration-300 hover:scale-105">
               <div className="aspect-square bg-gray-100 flex items-center justify-center p-8">
                 <img
-                  src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                  src="https://3.imimg.com/data3/QJ/BJ/MY-3130497/vertical-air-handling-unit-500x500.jpg"
                   alt="Pre-Insulated Pipes - Insulated piping systems for HVAC applications"
                   className="w-full h-full object-cover rounded"
                 />
               </div>
             </div>
             <h2 className="text-2xl font-semibold text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
-              Pre-Insulated Pipes
+              Vertical Air Handling Unit
+            </h2>
+          </div>
+          <div className="group text-center md:col-span-2 lg:col-span-1 mx-auto">
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden mb-6 transition-transform duration-300 hover:scale-105">
+              <div className="aspect-square bg-gray-100 flex items-center justify-center p-8">
+                <img
+                  src="https://4.imimg.com/data4/PA/UT/MY-14820194/air-cooled-screw-chiller.jpg"
+                  alt="Pre-Insulated Pipes - Insulated piping systems for HVAC applications"
+                  className="w-full h-full object-cover rounded"
+                />
+              </div>
+            </div>
+            <h2 className="text-2xl font-semibold text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
+              Fresh Air Handling Unit
+            </h2>
+          </div>
+          <div className="group text-center md:col-span-2 lg:col-span-1 mx-auto">
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden mb-6 transition-transform duration-300 hover:scale-105">
+              <div className="aspect-square bg-gray-100 flex items-center justify-center p-8">
+                <img
+                  src="https://5.imimg.com/data5/SELLER/Default/2024/1/379274191/ZY/FL/UG/9001966/industrial-fan-coil-unit-for-chilled-water.jpg"
+                  alt="Pre-Insulated Pipes - Insulated piping systems for HVAC applications"
+                  className="w-full h-full object-cover rounded"
+                />
+              </div>
+            </div>
+            <h2 className="text-2xl font-semibold text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
+              Fan Coil Unit (FCU)
+            </h2>
+          </div>
+          <div className="group text-center md:col-span-2 lg:col-span-1 mx-auto">
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden mb-6 transition-transform duration-300 hover:scale-105">
+              <div className="aspect-square bg-gray-100 flex items-center justify-center p-8">
+                <img
+                  src="https://www.theforcegroup.co.uk/heatx-force/wp-content/uploads/sites/3/2021/05/2-Heating-or-Cooling-Coil-650x488.jpg"
+                  alt="Pre-Insulated Pipes - Insulated piping systems for HVAC applications"
+                  className="w-full h-full object-cover rounded"
+                />
+              </div>
+            </div>
+            <h2 className="text-2xl font-semibold text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
+              Cooling & Heating Coils
             </h2>
           </div>
         </div>
