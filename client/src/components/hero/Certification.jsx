@@ -212,6 +212,7 @@
 // export default CertificationsCarousel;
 
 import React, { useState, useEffect } from "react";
+import SnowEffect from "../snow/SnowEffect";
 
 const CertificationsCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -293,7 +294,13 @@ const CertificationsCarousel = () => {
     >
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-6">
         {/* Left Sidebar Title */}
-        <div className="bg-blue-600 text-white w-full md:w-[280px] flex flex-col items-center justify-center py-10 relative">
+        <div
+          style={{
+            backgroundImage: `url('https://images.unsplash.com/photo-1703260809882-5b0b8d6abc76?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
+          }}
+          className="bg-blue-600 text-blue-600 w-full md:w-[480px] flex flex-col items-center justify-center py-10 relative"
+        >
+          <SnowEffect />
           <h2 className="text-3xl font-semibold">Certifications</h2>
           <div className="w-16 h-1 bg-white mt-2"></div>
         </div>
@@ -353,7 +360,12 @@ const CertificationsCarousel = () => {
               ))}
           </div>
         </div>
-        <div className="bg-blue-600 text-white w-full md:w-[300px] md:h-[128px] flex flex-col items-center justify-center py-10 relative"></div>
+        <div
+          style={{
+            backgroundImage: `url('https://images.unsplash.com/photo-1703260809882-5b0b8d6abc76?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
+          }}
+          className="bg-blue-600 text-blue-600 w-full md:w-[460px] md:h-[128px] flex flex-col items-center justify-center py-10 relative"
+        ></div>
       </div>
     </section>
   );
