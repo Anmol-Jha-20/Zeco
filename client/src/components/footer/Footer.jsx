@@ -130,6 +130,7 @@ import {
   FaYoutube,
   FaInstagram,
 } from "react-icons/fa";
+import SnowEffect from "../snow/SnowEffect";
 
 const ZecoFooter = () => {
   const [email, setEmail] = useState("");
@@ -143,20 +144,28 @@ const ZecoFooter = () => {
   };
 
   return (
-    <footer className="relative bg-gradient-to-br from-blue-500 via-blue-600 to-blue-700 text-white overflow-hidden">
+    <footer
+      style={{
+        backgroundImage: `url('https://images.unsplash.com/photo-1703260809882-5b0b8d6abc76?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+      }}
+      className="relative bg-gradient-to-br from-blue-500 via-blue-600 to-blue-700 text-white overflow-hidden"
+    >
+      <SnowEffect />
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl transform -translate-x-1/2 -translate-y-1/2"></div>
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl transform translate-x-1/2 translate-y-1/2"></div>
         <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-white rounded-full blur-3xl transform -translate-x-1/2 -translate-y-1/2"></div>
       </div>
-
       <div className="relative z-10 max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16">
           {/* ZECO AIRCON Section */}
           <div className="space-y-8">
             <div>
-              <h2 className="text-2xl font-bold mb-6 text-white">
+              <h2 className="text-2xl font-bold mb-6 text-blue-700">
                 Spire AirTech
               </h2>
               <div className="w-12 h-0.5 bg-white mb-8"></div>
@@ -209,7 +218,7 @@ const ZecoFooter = () => {
           {/* USEFUL LINKS Section */}
           <div className="space-y-8">
             <div>
-              <h2 className="text-2xl font-bold mb-6 text-white">
+              <h2 className="text-2xl font-bold mb-6 text-blue-700">
                 USEFUL LINKS
               </h2>
               <div className="w-12 h-0.5 bg-white mb-8"></div>
@@ -281,7 +290,7 @@ const ZecoFooter = () => {
           {/* SUBSCRIBE NOW Section */}
           <div className="space-y-8">
             <div>
-              <h2 className="text-2xl font-bold mb-6 text-white">
+              <h2 className="text-2xl font-bold mb-6 text-blue-700">
                 SUBSCRIBE NOW
               </h2>
               <div className="w-12 h-0.5 bg-white mb-8"></div>
@@ -312,17 +321,17 @@ const ZecoFooter = () => {
           </div>
         </div>
       </div>
-
       {/* Bottom Copyright Section */}
-      <div className="relative z-10 border-t border-white/20 bg-black/20 backdrop-blur-sm">
+      {/* add backdrop-blur-sm next to the bg-black/20 */}
+      <div className="relative z-10 border-t border-white/20 bg-black/20">
         <div className="max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
-            <p className="text-blue-100 text-center sm:text-left">
+            <p className="text-blue-800 font-bold text-center sm:text-left">
               ©2025 All Rights Reserved | Spire AirTech Ltd.
             </p>
             <a
               href="#sitemap"
-              className="text-blue-100 hover:text-white transition-colors duration-300"
+              className="text-blue-800 font-bold hover:text-white transition-colors duration-300"
             >
               Sitemap
             </a>
