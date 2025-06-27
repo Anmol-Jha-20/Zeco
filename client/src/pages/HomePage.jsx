@@ -46,6 +46,40 @@ export default function HomePage() {
                   HOME
                 </a>
 
+                {/* About Dropdown */}
+                <div
+                  className="relative"
+                  onMouseEnter={() => setHoveredDropdown("about")}
+                  onMouseLeave={() => setHoveredDropdown(null)}
+                >
+                  <button className="flex items-center text-gray-700 hover:text-red-500 font-medium transition-colors">
+                    ABOUT
+                    <ChevronDown className="ml-1 h-4 w-4" />
+                  </button>
+                  {hoveredDropdown === "about" && (
+                    <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-2 z-50">
+                      <a
+                        href="#our-story"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      >
+                        Our Story
+                      </a>
+                      <a
+                        href="#team"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      >
+                        Team
+                      </a>
+                      <a
+                        href="#certifications"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      >
+                        Certifications
+                      </a>
+                    </div>
+                  )}
+                </div>
+
                 {/* Products Dropdown */}
 
                 <div
@@ -93,40 +127,6 @@ export default function HomePage() {
                   )}
                 </div>
 
-                {/* About Dropdown */}
-                <div
-                  className="relative"
-                  onMouseEnter={() => setHoveredDropdown("about")}
-                  onMouseLeave={() => setHoveredDropdown(null)}
-                >
-                  <button className="flex items-center text-gray-700 hover:text-red-500 font-medium transition-colors">
-                    ABOUT
-                    <ChevronDown className="ml-1 h-4 w-4" />
-                  </button>
-                  {hoveredDropdown === "about" && (
-                    <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-2 z-50">
-                      <a
-                        href="#our-story"
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                      >
-                        Our Story
-                      </a>
-                      <a
-                        href="#team"
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                      >
-                        Team
-                      </a>
-                      <a
-                        href="#certifications"
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                      >
-                        Certifications
-                      </a>
-                    </div>
-                  )}
-                </div>
-
                 <a
                   href="#manufacturing"
                   className="text-gray-700 hover:text-red-500 font-medium transition-colors"
@@ -163,7 +163,7 @@ export default function HomePage() {
                   className="bg-red-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors flex items-center"
                 >
                   <Phone className="h-4 w-4 mr-2" />
-                  <span className="hidden sm:inline">1800-911-0070</span>
+                  <span className="hidden sm:inline">+91 9311778119</span>
                   <span className="sm:hidden">Call</span>
                 </a>
 
@@ -189,6 +189,37 @@ export default function HomePage() {
                   >
                     HOME
                   </a>
+                  <div className="py-2">
+                    <button
+                      onClick={() => setIsAboutOpen(!isAboutOpen)}
+                      className="flex items-center w-full text-left text-gray-700 hover:text-red-500 font-medium"
+                    >
+                      ABOUT
+                      <ChevronDown className="ml-1 h-4 w-4" />
+                    </button>
+                    {isAboutOpen && (
+                      <div className="ml-4 mt-2 space-y-2">
+                        <a
+                          href="#our-story"
+                          className="block py-1 text-sm text-gray-600"
+                        >
+                          Our Story
+                        </a>
+                        <a
+                          href="#team"
+                          className="block py-1 text-sm text-gray-600"
+                        >
+                          Team
+                        </a>
+                        <a
+                          href="#certifications"
+                          className="block py-1 text-sm text-gray-600"
+                        >
+                          Certifications
+                        </a>
+                      </div>
+                    )}
+                  </div>
                   <div className="py-2">
                     <button
                       onClick={() => setIsProductsOpen(!isProductsOpen)}
@@ -226,37 +257,7 @@ export default function HomePage() {
                       </div>
                     )}
                   </div>
-                  <div className="py-2">
-                    <button
-                      onClick={() => setIsAboutOpen(!isAboutOpen)}
-                      className="flex items-center w-full text-left text-gray-700 hover:text-red-500 font-medium"
-                    >
-                      ABOUT
-                      <ChevronDown className="ml-1 h-4 w-4" />
-                    </button>
-                    {isAboutOpen && (
-                      <div className="ml-4 mt-2 space-y-2">
-                        <a
-                          href="#our-story"
-                          className="block py-1 text-sm text-gray-600"
-                        >
-                          Our Story
-                        </a>
-                        <a
-                          href="#team"
-                          className="block py-1 text-sm text-gray-600"
-                        >
-                          Team
-                        </a>
-                        <a
-                          href="#certifications"
-                          className="block py-1 text-sm text-gray-600"
-                        >
-                          Certifications
-                        </a>
-                      </div>
-                    )}
-                  </div>
+
                   <a
                     href="#manufacturing"
                     className="block py-2 text-gray-700 hover:text-red-500 font-medium"

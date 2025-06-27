@@ -310,7 +310,7 @@ const CertificationsCarousel = () => {
             {certifications.map((cert) => (
               <div
                 key={cert.id}
-                className="w-1/3 flex-shrink-0 flex flex-col items-center justify-center"
+                className="w-1/4 flex-shrink-0 flex flex-col items-center justify-center"
               >
                 <img
                   src={cert.logo}
@@ -353,6 +353,7 @@ const CertificationsCarousel = () => {
               ))}
           </div>
         </div>
+        <div className="bg-blue-600 text-white w-full md:w-[300px] md:h-[128px] flex flex-col items-center justify-center py-10 relative"></div>
       </div>
     </section>
   );
