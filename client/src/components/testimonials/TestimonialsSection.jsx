@@ -303,7 +303,7 @@ const TestimonialsSection = () => {
       position: "Director - Ace Alliance",
       rating: 5,
       testimonial:
-        "We have been using ZECO products including AHU's, FCU's and prefabricated ducting for the last 6-7 years. We are very satisfied with their products and services.",
+        "We have been using Spire AirTech products including AHU's, FCU's and prefabricated ducting for the last 6-7 years. We are very satisfied with their products and services.",
       logo: "ACE",
       logoStyle: "bg-black text-white",
     },
@@ -313,7 +313,7 @@ const TestimonialsSection = () => {
       position: "Director - Unique Solution",
       rating: 5,
       testimonial:
-        "The quality of the products manufactured by ZECO has been found to be good and at par with the requirements of the normal practice of the trade & customer satisfaction.",
+        "The quality of the products manufactured by Spire AirTech has been found to be good and at par with the requirements of the normal practice of the trade & customer satisfaction.",
       logo: "UNIQUE",
       logoStyle: "bg-blue-600 text-white",
     },
@@ -323,7 +323,7 @@ const TestimonialsSection = () => {
       position: "Managing Director - MH Air",
       rating: 5,
       testimonial:
-        "We have been using ZECO manufactured products since the last 8+ years and are very satisfied with the product quality, delivery, performance, and after-sales services.",
+        "We have been using Spire AirTech manufactured products since the last 8+ years and are very satisfied with the product quality, delivery, performance, and after-sales services.",
       logo: "MH",
       logoStyle: "bg-blue-500 text-white border-2 border-blue-700",
     },
@@ -364,7 +364,14 @@ const TestimonialsSection = () => {
     <article className="bg-white rounded-2xl shadow-[0_10px_25px_rgba(0,0,0,0.08)] p-8 relative max-w-md mx-auto h-full flex flex-col">
       {/* Quote Icon */}
       <div className="absolute -top-4 -right-4 w-20 h-20 bg-blue-500 rounded-bl-full flex items-center justify-center">
-        <span className="text-white text-2xl font-bold">66</span>
+        <span className="text-white text-2xl font-bold">
+          <img
+            width="30"
+            height="30"
+            src="https://img.icons8.com/ios-glyphs/30/quote-left.png"
+            alt="quote-left"
+          />
+        </span>
       </div>
 
       {/* Company Logo */}
