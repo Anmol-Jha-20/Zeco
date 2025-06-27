@@ -302,7 +302,7 @@ const CertificationsCarousel = () => {
         >
           <SnowEffect />
           <h2 className="text-3xl font-semibold">Certifications</h2>
-          <div className="w-16 h-1 bg-white mt-2"></div>
+          <div className="w-16 h-1 mt-2"></div>
         </div>
 
         {/* Carousel Content */}
@@ -365,7 +365,10 @@ const CertificationsCarousel = () => {
             backgroundImage: `url('https://images.unsplash.com/photo-1703260809882-5b0b8d6abc76?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
           }}
           className="bg-blue-600 text-blue-600 w-full md:w-[460px] md:h-[128px] flex flex-col items-center justify-center py-10 relative"
-        ></div>
+        >
+          <SnowEffect />
+          <div className="w-16 h-1 mt-2"></div>
+        </div>
       </div>
     </section>
   );
