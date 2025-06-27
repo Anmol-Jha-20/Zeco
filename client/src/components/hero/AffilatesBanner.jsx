@@ -1,25 +1,37 @@
 import React from "react";
+import SnowEffect from "../snow/SnowEffect.jsx";
 
 const AffiliatesBanner = () => {
   return (
-    <div className="w-full bg-gradient-to-r from-blue-600 to-blue-500 py-8 px-4 sm:px-6 lg:px-8">
+    <div
+      style={{
+        backgroundImage: `url('https://images.unsplash.com/photo-1703260809882-5b0b8d6abc76?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        position: "relative", // ✅ Add this
+        overflow: "hidden",
+      }}
+      className="w-full bg-gradient-to-r from-blue-600 to-blue-500 py-8 px-4 sm:px-6 lg:px-8"
+    >
+      <SnowEffect />
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
           {/* Left Section - Our Affiliates */}
           <div className="text-center lg:text-left">
-            <h1 className="text-white text-3xl sm:text-4xl lg:text-5xl font-light tracking-wide">
+            <h1 className="text-blue-600 font-medium text-3xl sm:text-4xl lg:text-5xl tracking-wide">
               Our
             </h1>
-            <h2 className="text-white text-3xl sm:text-4xl lg:text-5xl font-light tracking-wide mt-1">
+            <h2 className="text-blue-600 font-medium text-3xl sm:text-4xl lg:text-5xl tracking-wide mt-1">
               Affiliates
             </h2>
             <div className="flex justify-center lg:justify-start mt-4">
               <div className="flex items-center gap-2">
-                <div className="w-12 h-0.5 bg-white"></div>
+                <div className="w-12 h-0.5 bg-blue-600"></div>
                 <div className="flex gap-1">
-                  <div className="w-2 h-2 bg-white rounded-full"></div>
-                  <div className="w-2 h-2 bg-white rounded-full"></div>
-                  <div className="w-2 h-2 bg-white rounded-full"></div>
+                  <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                  <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
+                  <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
                 </div>
               </div>
             </div>

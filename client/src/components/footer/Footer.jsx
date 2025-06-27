@@ -130,7 +130,7 @@ import {
   FaYoutube,
   FaInstagram,
 } from "react-icons/fa";
-import SnowEffect from "../snow/SnowEffect";
+import SnowEffect from "../snow/SnowEffect.jsx";
 
 const ZecoFooter = () => {
   const [email, setEmail] = useState("");
