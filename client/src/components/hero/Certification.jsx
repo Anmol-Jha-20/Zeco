@@ -292,13 +292,13 @@ const CertificationsCarousel = () => {
       className="w-full bg-white py-12 px-4"
       aria-label="Company Certifications"
     >
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-24">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-6">
         {/* Left Sidebar Title */}
         <div
           style={{
             backgroundImage: `url(${FooterImage})`,
           }}
-          className="bg-blue-600 text-white w-full md:w-[350px] flex flex-col items-center justify-center py-10 relative"
+          className="bg-blue-600 text-white w-full md:w-[350px] md:h-[200px] flex flex-col items-center justify-center py-10 relative"
         >
           <h2 className="text-3xl font-semibold">Certifications</h2>
           {/* <div className="w-16 h-1 mt-2 bg-white"></div> */}
@@ -331,7 +331,7 @@ const CertificationsCarousel = () => {
                 <img
                   src={cert.logo}
                   alt={cert.alt}
-                  className="h-24 object-contain"
+                  className="h-24 md:h-44 object-contain"
                   loading="lazy"
                 />
               </div>
@@ -373,7 +373,7 @@ const CertificationsCarousel = () => {
           style={{
             backgroundImage: `url(${FooterImage})`,
           }}
-          className="bg-blue-600 text-blue-600 w-full md:w-[280px] md:h-[128px] flex flex-col items-center justify-center py-10 relative"
+          className="bg-blue-600 text-blue-600 w-full md:w-[280px] md:h-[200px] flex flex-col items-center justify-center py-10 relative"
         >
           <div className="w-16 h-1 mt-2"></div>
         </div>
