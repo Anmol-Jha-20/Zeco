@@ -363,7 +363,7 @@ const TestimonialsSection = () => {
   const TestimonialCard = ({ testimonial }) => (
     <article className="bg-white rounded-2xl shadow-[0_10px_25px_rgba(0,0,0,0.08)] p-8 relative max-w-md mx-auto h-full flex flex-col">
       {/* Quote Icon */}
-      <div className="absolute -top-4 -right-4 w-20 h-20 bg-blue-500 rounded-bl-full flex items-center justify-center">
+      <div className="absolute -top-4 -right-0 w-20 h-20 bg-blue-500 rounded-bl-full flex items-center justify-center">
         <span className="text-white text-2xl font-bold">
           <img
             width="30"

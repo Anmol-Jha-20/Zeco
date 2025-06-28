@@ -169,7 +169,7 @@ const ZecoFooter = () => {
                 Spire AirTech
               </h2>
               <div className="w-12 h-0.5 bg-white mb-8"></div>
-              <p className="text-blue-100 leading-relaxed text-lg">
+              <p className="text-blue-500 leading-relaxed text-lg">
                 Spire AirTech is Pioneer in manufacturing of central air
                 conditioning & air distribution systems.
               </p>
@@ -196,7 +196,7 @@ const ZecoFooter = () => {
                 className="w-12 h-12 bg-white text-blue-600 rounded-lg flex items-center justify-center hover:bg-blue-50 transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                 aria-label="Connect with us on LinkedIn"
               >
-                <FaTwitter size={20} />
+                <FaLinkedinIn size={20} />
               </a>
               <a
                 href="#"
@@ -228,7 +228,7 @@ const ZecoFooter = () => {
               <nav className="space-y-4">
                 <a
                   href="#about"
-                  className="flex items-center text-blue-100 hover:text-white transition-colors duration-300 text-lg group"
+                  className="flex items-center text-blue-500 hover:text-blue-600 transition-colors duration-300 text-lg group"
                 >
                   <span className="mr-3 transform group-hover:translate-x-1 transition-transform duration-300">
                     ›
@@ -237,7 +237,7 @@ const ZecoFooter = () => {
                 </a>
                 <a
                   href="#partner"
-                  className="flex items-center text-blue-100 hover:text-white transition-colors duration-300 text-lg group"
+                  className="flex items-center text-blue-500 hover:text-blue-600 transition-colors duration-300 text-lg group"
                 >
                   <span className="mr-3 transform group-hover:translate-x-1 transition-transform duration-300">
                     ›
@@ -246,7 +246,7 @@ const ZecoFooter = () => {
                 </a>
                 <a
                   href="#infrastructure"
-                  className="flex items-center text-blue-100 hover:text-white transition-colors duration-300 text-lg group"
+                  className="flex items-center text-blue-500 hover:text-blue-600 transition-colors duration-300 text-lg group"
                 >
                   <span className="mr-3 transform group-hover:translate-x-1 transition-transform duration-300">
                     ›
@@ -258,7 +258,7 @@ const ZecoFooter = () => {
               <nav className="space-y-4">
                 <a
                   href="#csr"
-                  className="flex items-center text-blue-100 hover:text-white transition-colors duration-300 text-lg group"
+                  className="flex items-center text-blue-500 hover:text-blue-600 transition-colors duration-300 text-lg group"
                 >
                   <span className="mr-3 transform group-hover:translate-x-1 transition-transform duration-300">
                     ›
@@ -267,7 +267,7 @@ const ZecoFooter = () => {
                 </a>
                 <a
                   href="#privacy"
-                  className="flex items-center text-blue-100 hover:text-white transition-colors duration-300 text-lg group"
+                  className="flex items-center text-blue-500 hover:text-blue-600 transition-colors duration-300 text-lg group"
                 >
                   <span className="mr-3 transform group-hover:translate-x-1 transition-transform duration-300">
                     ›
@@ -276,7 +276,7 @@ const ZecoFooter = () => {
                 </a>
                 <a
                   href="#contact"
-                  className="flex items-center text-blue-100 hover:text-white transition-colors duration-300 text-lg group"
+                  className="flex items-center text-blue-500 hover:text-blue-600 transition-colors duration-300 text-lg group"
                 >
                   <span className="mr-3 transform group-hover:translate-x-1 transition-transform duration-300">
                     ›
@@ -294,7 +294,7 @@ const ZecoFooter = () => {
                 SUBSCRIBE NOW
               </h2>
               <div className="w-12 h-0.5 bg-white mb-8"></div>
-              <p className="text-blue-100 leading-relaxed text-lg mb-8">
+              <p className="text-blue-500 leading-relaxed text-lg mb-8">
                 Don't miss our future updates! Get Subscribed Today!
               </p>
             </div>
@@ -331,7 +331,7 @@ const ZecoFooter = () => {
             </p>
             <a
               href="#sitemap"
-              className="text-blue-800 font-bold hover:text-white transition-colors duration-300"
+              className="text-blue-800 font-bold hover:text-blue-600 transition-colors duration-300"
             >
               Sitemap
             </a>
