@@ -71,7 +71,7 @@ const AffiliatesBanner = () => {
 
             {/* Ygar Group Logo */}
             <div className="flex items-center bg-white rounded-lg px-6 py-4 shadow-lg min-w-[200px]">
-              <div className="flex items-center gap-3">
+              <div className="flex items-center px-7 py-5 gap-3">
                 {/* Ygar Icon - Colorful abstract design */}
                 <div className="w-8 h-8 relative">
                   <div className="absolute inset-0 flex items-center justify-center">

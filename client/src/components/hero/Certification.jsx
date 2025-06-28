@@ -289,10 +289,10 @@ const CertificationsCarousel = () => {
 
   return (
     <section
-      className="w-full bg-white py-12 px-4 md:px-24"
+      className="w-full bg-white py-12 px-4"
       aria-label="Company Certifications"
     >
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-6">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-24">
         {/* Left Sidebar Title */}
         <div
           style={{
