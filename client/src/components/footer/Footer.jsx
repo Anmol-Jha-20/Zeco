@@ -122,6 +122,7 @@
 
 import React, { useState } from "react";
 import { Mail } from "lucide-react";
+import FooterImage from "../../assets/FooterImage.png";
 
 import {
   FaFacebookF,
@@ -130,7 +131,6 @@ import {
   FaYoutube,
   FaInstagram,
 } from "react-icons/fa";
-import SnowEffect from "../snow/SnowEffect.jsx";
 
 const ZecoFooter = () => {
   const [email, setEmail] = useState("");
@@ -146,14 +146,13 @@ const ZecoFooter = () => {
   return (
     <footer
       style={{
-        backgroundImage: `url('https://images.unsplash.com/photo-1703260809882-5b0b8d6abc76?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
+        backgroundImage: `url(${FooterImage})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
       }}
       className="relative bg-gradient-to-br from-blue-500 via-blue-600 to-blue-700 text-white overflow-hidden"
     >
-      <SnowEffect />
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl transform -translate-x-1/2 -translate-y-1/2"></div>
@@ -165,11 +164,11 @@ const ZecoFooter = () => {
           {/* ZECO AIRCON Section */}
           <div className="space-y-8">
             <div>
-              <h2 className="text-2xl font-bold mb-6 text-blue-700">
+              <h2 className="text-xl font-bold mb-6 text-white">
                 Spire AirTech
               </h2>
               <div className="w-12 h-0.5 bg-white mb-8"></div>
-              <p className="text-blue-500 leading-relaxed text-lg">
+              <p className="text-blue-100 leading-relaxed text-lg">
                 Spire AirTech is Pioneer in manufacturing of central air
                 conditioning & air distribution systems.
               </p>
@@ -218,7 +217,7 @@ const ZecoFooter = () => {
           {/* USEFUL LINKS Section */}
           <div className="space-y-8">
             <div>
-              <h2 className="text-2xl font-bold mb-6 text-blue-700">
+              <h2 className="text-xl font-bold mb-6 text-white">
                 USEFUL LINKS
               </h2>
               <div className="w-12 h-0.5 bg-white mb-8"></div>
@@ -228,7 +227,7 @@ const ZecoFooter = () => {
               <nav className="space-y-4">
                 <a
                   href="#about"
-                  className="flex items-center text-blue-500 hover:text-blue-600 transition-colors duration-300 text-lg group"
+                  className="flex items-center text-blue-100 hover:text-white transition-colors duration-300 text-lg group"
                 >
                   <span className="mr-3 transform group-hover:translate-x-1 transition-transform duration-300">
                     ›
@@ -237,7 +236,7 @@ const ZecoFooter = () => {
                 </a>
                 <a
                   href="#partner"
-                  className="flex items-center text-blue-500 hover:text-blue-600 transition-colors duration-300 text-lg group"
+                  className="flex items-center text-blue-100 hover:text-white transition-colors duration-300 text-lg group"
                 >
                   <span className="mr-3 transform group-hover:translate-x-1 transition-transform duration-300">
                     ›
@@ -246,7 +245,7 @@ const ZecoFooter = () => {
                 </a>
                 <a
                   href="#infrastructure"
-                  className="flex items-center text-blue-500 hover:text-blue-600 transition-colors duration-300 text-lg group"
+                  className="flex items-center text-blue-100 hover:text-white transition-colors duration-300 text-lg group"
                 >
                   <span className="mr-3 transform group-hover:translate-x-1 transition-transform duration-300">
                     ›
@@ -258,7 +257,7 @@ const ZecoFooter = () => {
               <nav className="space-y-4">
                 <a
                   href="#csr"
-                  className="flex items-center text-blue-500 hover:text-blue-600 transition-colors duration-300 text-lg group"
+                  className="flex items-center text-blue-100 hover:text-white transition-colors duration-300 text-lg group"
                 >
                   <span className="mr-3 transform group-hover:translate-x-1 transition-transform duration-300">
                     ›
@@ -267,7 +266,7 @@ const ZecoFooter = () => {
                 </a>
                 <a
                   href="#privacy"
-                  className="flex items-center text-blue-500 hover:text-blue-600 transition-colors duration-300 text-lg group"
+                  className="flex items-center text-blue-100 hover:text-white transition-colors duration-300 text-lg group"
                 >
                   <span className="mr-3 transform group-hover:translate-x-1 transition-transform duration-300">
                     ›
@@ -276,7 +275,7 @@ const ZecoFooter = () => {
                 </a>
                 <a
                   href="#contact"
-                  className="flex items-center text-blue-500 hover:text-blue-600 transition-colors duration-300 text-lg group"
+                  className="flex items-center text-blue-100 hover:text-white transition-colors duration-300 text-lg group"
                 >
                   <span className="mr-3 transform group-hover:translate-x-1 transition-transform duration-300">
                     ›
@@ -290,11 +289,11 @@ const ZecoFooter = () => {
           {/* SUBSCRIBE NOW Section */}
           <div className="space-y-8">
             <div>
-              <h2 className="text-2xl font-bold mb-6 text-blue-700">
+              <h2 className="text-xl font-bold mb-6 text-white">
                 SUBSCRIBE NOW
               </h2>
               <div className="w-12 h-0.5 bg-white mb-8"></div>
-              <p className="text-blue-500 leading-relaxed text-lg mb-8">
+              <p className="text-blue-100 leading-relaxed text-lg mb-8">
                 Don't miss our future updates! Get Subscribed Today!
               </p>
             </div>
@@ -326,12 +325,12 @@ const ZecoFooter = () => {
       <div className="relative z-10 border-t border-white/20 bg-black/20">
         <div className="max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
-            <p className="text-blue-800 font-bold text-center sm:text-left">
+            <p className="text-white font-bold text-center sm:text-left">
               ©2025 All Rights Reserved | Spire AirTech Ltd.
             </p>
             <a
               href="#sitemap"
-              className="text-blue-800 font-bold hover:text-blue-600 transition-colors duration-300"
+              className="text-white font-bold hover:text-white transition-colors duration-300"
             >
               Sitemap
             </a>

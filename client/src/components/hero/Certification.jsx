@@ -212,7 +212,7 @@
 // export default CertificationsCarousel;
 
 import React, { useState, useEffect } from "react";
-import SnowEffect from "../snow/SnowEffect";
+import FooterImage from "../../assets/FooterImage.png";
 
 const CertificationsCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -289,20 +289,29 @@ const CertificationsCarousel = () => {
 
   return (
     <section
-      className="w-full bg-white py-12 px-4"
+      className="w-full bg-white py-12 px-4 md:px-24"
       aria-label="Company Certifications"
     >
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-6">
         {/* Left Sidebar Title */}
         <div
           style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1703260809882-5b0b8d6abc76?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
+            backgroundImage: `url(${FooterImage})`,
           }}
-          className="bg-blue-600 text-blue-600 w-full md:w-[480px] flex flex-col items-center justify-center py-10 relative"
+          className="bg-blue-600 text-white w-full md:w-[350px] flex flex-col items-center justify-center py-10 relative"
         >
-          <SnowEffect />
           <h2 className="text-3xl font-semibold">Certifications</h2>
-          <div className="w-16 h-1 mt-2"></div>
+          {/* <div className="w-16 h-1 mt-2 bg-white"></div> */}
+          <div className="flex justify-center lg:justify-start mt-4">
+            <div className="flex items-center gap-2">
+              <div className="flex gap-1">
+                <div className="w-1 h-1 bg-white rounded-full"></div>
+                <div className="w-1 h-1 bg-white rounded-full"></div>
+                <div className="w-1 h-1 bg-white rounded-full"></div>
+              </div>
+              <div className="w-20 h-1 bg-white rounded-4xl"></div>
+            </div>
+          </div>
         </div>
 
         {/* Carousel Content */}
@@ -362,11 +371,10 @@ const CertificationsCarousel = () => {
         </div>
         <div
           style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1703260809882-5b0b8d6abc76?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
+            backgroundImage: `url(${FooterImage})`,
           }}
-          className="bg-blue-600 text-blue-600 w-full md:w-[460px] md:h-[128px] flex flex-col items-center justify-center py-10 relative"
+          className="bg-blue-600 text-blue-600 w-full md:w-[280px] md:h-[128px] flex flex-col items-center justify-center py-10 relative"
         >
-          <SnowEffect />
           <div className="w-16 h-1 mt-2"></div>
         </div>
       </div>
