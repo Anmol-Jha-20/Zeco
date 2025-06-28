@@ -164,11 +164,11 @@ const ZecoFooter = () => {
           {/* ZECO AIRCON Section */}
           <div className="space-y-8">
             <div>
-              <h2 className="text-xl font-bold mb-6 text-white">
+              <h2 className="text-xl font-bold mb-6 text-blue-700 md:text-white">
                 Spire AirTech
               </h2>
               <div className="w-12 h-0.5 bg-white mb-8"></div>
-              <p className="text-blue-100 leading-relaxed text-lg">
+              <p className="md:text-blue-100 text-white leading-relaxed text-lg">
                 Spire AirTech is Pioneer in manufacturing of central air
                 conditioning & air distribution systems.
               </p>
