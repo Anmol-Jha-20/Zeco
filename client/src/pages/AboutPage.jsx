@@ -341,7 +341,8 @@ import {
   Building2,
   Zap,
 } from "lucide-react";
-import ClienteleSlider from "../components/about/Clientele";
+import ClienteleSlider from "../components/about/Clientele.jsx";
+import DamperImage from "../assets/DamperImage.png";
 
 // Simple animation utilities (Framer Motion alternative)
 const useInView = (threshold = 0.1) => {
@@ -607,7 +608,10 @@ const AboutPage = () => {
                   <strong className="text-blue-600">
                     in-house manufacturing of high-quality HVAC components
                   </strong>
-                  , including all types of Air Grills and Dampers.
+                  , including{" "}
+                  <strong className="text-blue-600">
+                    all types of Air Grills and Dampers.
+                  </strong>
                 </p>
                 <p className="text-gray-600 text-lg leading-relaxed">
                   We specialize in{" "}
@@ -621,7 +625,7 @@ const AboutPage = () => {
               </AnimatedSection>
               <AnimatedSection delay={600}>
                 <div className="relative">
-                  <div className="bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl p-8 text-white transform hover:scale-105 transition-transform duration-300">
+                  {/* <div className="bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl p-8 text-white transform hover:scale-105 transition-transform duration-300">
                     <Building2 className="w-12 h-12 mb-4 animate-pulse" />
                     <h3 className="text-xl font-semibold mb-4">
                       Our Clientele
@@ -682,7 +686,12 @@ const AboutPage = () => {
                         • IT Parks & Data Centers
                       </li>
                     </ul>
-                  </div>
+                  </div> */}
+                  <img
+                    src={DamperImage}
+                    className="rounded"
+                    alt="Damper Image"
+                  />
                 </div>
               </AnimatedSection>
             </div>
@@ -701,8 +710,16 @@ const AboutPage = () => {
               In-House Manufacturing
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              HVAC Grills & Dampers fabricated using high-grade materials with
-              precision engineering
+              At <strong>Spire AirTech Pvt. Ltd.</strong>, we manufacture a
+              complete range of{" "}
+              <strong className="text-blue-600">
+                {" "}
+                Air Distribution Products
+              </strong>{" "}
+              essential for efficient airflow, temperature control, and
+              ventilation in HVAC systems. All products are fabricated using
+              high-grade materials with precision engineering to meet
+              project-specific requirements and industry standards.
             </p>
           </div>
 
