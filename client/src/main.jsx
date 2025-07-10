@@ -10,6 +10,7 @@ import ContactPage from "./pages/ContactPage.jsx";
 import ProjectPage from "./pages/ProjectPage.jsx";
 import Manufacturing from "./pages/manufacturing.jsx";
 import ServicePage from "./pages/ServicePage.jsx";
+import HeatExchangerCoils from "./components/Products/HeatExchangerCoils/HeatExchangerCoils.jsx";
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
       {
         path: "/contact-us",
         element: <ContactPage />,
+      },
+      {
+        path: "/heat-exchanger-coils",
+        element: <HeatExchangerCoils />,
       },
     ],
   },
