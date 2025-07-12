@@ -2,65 +2,45 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Plus, Minus } from "lucide-react";
 
-const FAQAirDistribution = () => {
+const SmartAHUFAQComponent = () => {
   const [openItems, setOpenItems] = useState({ 0: true }); // First item open by default
 
   const faqData = [
     {
-      question: "What types of ducts does SPIRE manufacture?",
+      question: "What are heat exchangers used for in HVAC systems?",
       answer:
-        "SPIRE manufactures three main types of ducts—Rectangular, Oval, and Round—to suit various space layouts, airflow requirements, and aesthetic preferences in HVAC systems.",
+        "Heat exchangers transfer thermal energy between two fluids, usually air and water or refrigerant, without mixing them. They are used for both heating and cooling purposes in air handling units and fan coil systems.",
     },
     {
-      question: "What materials are used in SPIRE’s ducting systems?",
+      question: "How do DX cooling coils work?",
       answer:
-        "Our ducts are made from high-quality Galvanized Iron (G.I.), Stainless Steel (SS 304/316), or Aluminum, depending on application needs and environmental conditions.",
-    },
-    {
-      question: "How fast is the installation process?",
-      answer:
-        "Thanks to prefabricated modular design and precision fitment, installation is quicker and smoother, reducing overall project timelines.",
-    },
-    {
-      question: "Are SPIRE ducts insulated?",
-      answer:
-        "Yes, we offer both internally and externally insulated ducts using materials like Glass Wool, Rock Wool, or Nitrile Rubber for thermal and acoustic performance.",
+        "DX (Direct Expansion) cooling coils work by allowing refrigerant to expand directly within the coil, absorbing heat from the air passing over it. The refrigerant evaporates as it absorbs heat, providing efficient cooling for HVAC systems.",
     },
     {
       question:
-        "Can the ducts be customized for specific project requirements?",
+        "What is the difference between a chilled water coil and a DX coil?",
       answer:
-        "Absolutely! We manufacture ducts as per your project drawings and specifications, ensuring custom sizes, fittings, and configurations for seamless integration.",
+        "Chilled water coils use water as the heat transfer medium, circulating chilled water through the coil to cool air. DX coils use refrigerant that expands directly in the coil. Chilled water systems are better for large applications, while DX systems are more efficient for smaller spaces.",
     },
     {
-      question: "Do SPIRE ducts comply with industry standards?",
+      question: "Can heat exchangers be customized for my HVAC setup?",
       answer:
-        "Yes. Our ducts are manufactured following SMACNA, ASHRAE, and other international standards to ensure top-tier performance, safety, and efficiency.",
+        "Yes, heat exchangers can be customized based on your specific HVAC requirements including size, capacity, materials, and configuration. Custom solutions ensure optimal performance and efficiency for your particular application.",
     },
     {
-      question: "What kind of joints and sealing systems are used?",
+      question: "Where can I find HVAC suppliers in India for heat exchangers?",
       answer:
-        "We use leak-proof sealing techniques, including Pittsburgh or Snap Lock seams and high-quality gaskets or sealants, to minimize air leakage and improve system efficiency.",
+        "You can find HVAC suppliers for heat exchangers through industry directories, trade associations, online marketplaces, and local distributor networks. Many manufacturers have regional offices and authorized dealers across major Indian cities.",
     },
     {
-      question: "What applications are these ducts best suited for?",
+      question: "What makes Spire's Heat Exchangers energy-efficient?",
       answer:
-        "SPIRE ducts are ideal for commercial buildings, industrial plants, hospitals, data centers, malls, airports, and residential projects requiring centralized HVAC systems.",
+        "Spire's heat exchangers feature advanced design elements like optimized fin patterns, high-quality materials, enhanced heat transfer surfaces, and precision manufacturing that maximize thermal efficiency while minimizing energy consumption.",
     },
     {
-      question: "How does SPIRE ensure product quality?",
+      question: "Can the coils handle aggressive or corrosive environments?",
       answer:
-        "Each duct undergoes phase-wise quality inspections, precision fabrication, and pressure testing to ensure performance, durability, and compliance.",
-    },
-    {
-      question: "How do you ensure minimal air leakage in your duct systems?",
-      answer:
-        "We use advanced seam technologies, gaskets, sealants, and flanged joints that comply with SMACNA sealing class A, B, or C for maximum leak prevention.",
-    },
-    {
-      question: "What types of insulation do you offer?",
-      answer:
-        "We provide both internal and external insulation using closed or open-cell nitrile rubber, depending on acoustic and thermal needs.",
+        "Yes, coils can be designed with specialized materials and coatings to handle aggressive or corrosive environments. Options include epoxy coatings, stainless steel construction, and specialized alloys depending on the specific environmental conditions.",
     },
   ];
 
@@ -133,4 +113,4 @@ const FAQAirDistribution = () => {
   );
 };
 
-export default FAQAirDistribution;
+export default SmartAHUFAQComponent;

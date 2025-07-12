@@ -12,6 +12,10 @@ import Manufacturing from "./pages/manufacturing.jsx";
 import ServicePage from "./pages/ServicePage.jsx";
 import HeatExchangerCoils from "./components/Products/HeatExchangerCoils/HeatExchangerCoils.jsx";
 import AirDistributionDucts from "./components/Products/AirDistributionDucts/AirDistributionDucts.jsx";
+import SmartAHU from "./components/Products/SmartAHU/SmartAHU.jsx";
+import PharmaAHU from "./components/Products/PharmaAHU/PharmaAHU.jsx";
+import CleanroomAHU from "./components/Products/CleanroomAHU/CleanroomAHU.jsx";
+import FloorMountedAHU from "./components/Products/FloorMountedAHU/FloorMountedAHU.jsx";
 
 const router = createBrowserRouter([
   {
@@ -49,6 +53,22 @@ const router = createBrowserRouter([
       {
         path: "/air-distribution-ducts",
         element: <AirDistributionDucts />,
+      },
+      {
+        path: "/smart-ahu",
+        element: <SmartAHU />,
+      },
+      {
+        path: "/pharma-ahu",
+        element: <PharmaAHU />,
+      },
+      {
+        path: "/cleanroom-ahu",
+        element: <CleanroomAHU />,
+      },
+      {
+        path: "/floor-mounted-ahu",
+        element: <FloorMountedAHU />,
       },
     ],
   },

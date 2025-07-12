@@ -62,7 +62,7 @@ const AirDistributionProductUSPs = () => {
           Product USP's
         </h1>
         <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
-          Engineered for Efficiency, Built for Endurance
+          Precision-Built Air Ducts for Performance, Efficiency, and Flexibility
         </p>
       </div>
 
