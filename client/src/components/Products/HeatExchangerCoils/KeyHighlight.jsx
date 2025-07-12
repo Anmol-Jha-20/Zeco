@@ -20,8 +20,8 @@ const KeyHighlights = () => {
       content: (
         <div className="space-y-4">
           <p className="text-gray-700 leading-relaxed">
-            Zeco Aircon's Heat Exchanger is a high-performance solution crafted
-            to meet the demanding thermal control requirements of modern
+            Spire AirTech's Heat Exchanger is a high-performance solution
+            crafted to meet the demanding thermal control requirements of modern
             industrial and commercial facilities. With AHRI 410-certified
             performance, these units are engineered to deliver efficient and
             reliable heat exchange while ensuring long-term durability and
@@ -48,7 +48,7 @@ const KeyHighlights = () => {
           </p>
           <p className="text-gray-700 leading-relaxed">
             From healthcare and pharmaceuticals to data centers and
-            manufacturing facilities, Zeco's Heat Exchangers offer custom-built
+            manufacturing facilities, Spire's Heat Exchangers offer custom-built
             adaptability, energy efficiency, and thermal accuracy—delivering a
             smarter, sustainable HVAC solution for any environment.
           </p>

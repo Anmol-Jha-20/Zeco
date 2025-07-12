@@ -1,31 +1,30 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const HeatExchangerTypes = () => {
+const AirDistributionTypes = () => {
   const coilTypes = [
     {
       id: 1,
-      title: "Direct Expansion (DX) Coil",
+      title: "Rectangular Duct",
       description:
-        "Direct Expansion (DX) coils effectively cool the area by absorbing heat from the air directly using refrigerant. We have designed our DX coils to operate at high pressures (up to 600 PSI) and with low energy consumption using common refrigerants like R22, R134a, and R407C.",
-      image:
-        "https://zecoaircon.com/wp-content/uploads/2025/04/Direct-Expansion-DX-Coil.jpg",
+        "SPIRE rectangular ducts are ideal for installations with limited vertical space. Their flat design allows for easy integration into ceiling voids and tight spaces, making them perfect for commercial and industrial buildings where space efficiency is critical.",
+      image: "https://zecoaircon.com/wp-content/uploads/2025/04/Ract.jpg",
     },
     {
       id: 2,
-      title: "Chilled Water Coil",
+      title: "Round Duct",
       description:
-        "These coils cool air in HVAC systems by moving chilled water via pipes. Our coils are constructed from sturdy materials like copper and aluminum to effectively withstand high pressures, and they include counter-flow heat exchange for optimal heat transmission.",
+        "SPIRE round ducts ensure superior airflow and reduced air resistance, making them highly efficient for ventilation systems. Easy to install and cost-effective, they are a preferred choice for many HVAC applications.",
       image:
-        "https://zecoaircon.com/wp-content/uploads/2025/04/Chilled-Water-Coil.jpg",
+        "https://zecoaircon.com/wp-content/uploads/2025/04/Spiral-Seam-Round-Duct.jpg",
     },
     {
       id: 3,
-      title: "Hot Water Coil",
+      title: "Oval Duct",
       description:
-        "Hot water coils heat air by passing it over hot water pipes. Our hot water coils, which are composed of corrosion-resistant materials like copper and stainless steel, can tolerate high temperatures and provide dependable and economical heating.",
+        "Combining the low-profile advantage of rectangular ducts with the airflow efficiency of round ducts, SPIRE oval ducts offer both aesthetics and performance. They are perfect for exposed installations and environments that require both form and function.",
       image:
-        "https://zecoaircon.com/wp-content/uploads/2025/04/Chilled-Water-Coil.jpg",
+        "https://zecoaircon.com/wp-content/uploads/2025/04/Spiral-Seam-Flat-Oval-Duct.jpg",
     },
   ];
 
@@ -66,24 +65,27 @@ const HeatExchangerTypes = () => {
           className="text-center mb-16"
         >
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-8">
-            Spire Heat Exchanger Coils
+            Engineered for Every Space
           </h1>
 
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-gray-600 leading-relaxed mb-4">
-              Spire AirTech Industries is a manufacturer of commercial &
-              industrial coils. We manufacture all types of coils i.e.
-              Evaporator, Condenser, Steam, Water & Custom coils for specific
-              requirements. We enjoy a countrywide reputation for excellence in
-              manufacturing of commercial & industrial coils for critical needs.
+              At SPIRE, we understand that every project has its own space
+              constraints and performance requirements. That’s why we offer
+              three precision-crafted types of air distribution ducts:
+              Rectangular, Oval, and Round –each designed to optimize airflow,
+              maximize efficiency, and adapt to unique architectural and
+              operational demands. Whether you’re working with tight ceiling
+              spaces, exposed duct layouts, or high-performance systems, SPIRE
+              has the perfect ducting solution tailored for you.
             </p>
-            <p className="text-lg text-gray-600 leading-relaxed">
+            {/* <p className="text-lg text-gray-600 leading-relaxed">
               <span className="italic font-medium">
                 "If it's a coil we can build it"
               </span>{" "}
               is the motto of our coil manufacturing division. Our designers and
               Technicians take pride in living up to the motto.
-            </p>
+            </p> */}
           </div>
         </motion.div>
 
@@ -95,8 +97,8 @@ const HeatExchangerTypes = () => {
           className="mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-12 text-center">
-            A Mark of Quality:{" "}
-            <span className="text-blue-600">three types of Coils</span>
+            Choose The Right Duct For{" "}
+            <span className="text-blue-600">Your HVAC Needs</span>
           </h2>
 
           {/* Coil Types Grid */}
@@ -133,9 +135,12 @@ const HeatExchangerTypes = () => {
             ))}
           </motion.div>
         </motion.div>
+        <button className="bg-blue-600 hover:bg-blue-700 rounded cursor-pointer text-white px-6 py-4 text-lg font-medium tracking-wide transition-all duration-300 shadow-lg hover:shadow-xl">
+          CONSULT OUR SPIRE EXPERTS
+        </button>
       </div>
     </div>
   );
 };
 
-export default HeatExchangerTypes;
+export default AirDistributionTypes;

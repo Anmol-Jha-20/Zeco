@@ -240,61 +240,87 @@ function Header() {
       </button>
       {mobileOpenMenus[title] && (
         <div className="ml-4 space-y-1">
-          {Object.entries(data).map(([category, items]) => (
-            <div key={category}>
-              <button
-                onClick={() => toggleMobileMenu(category)}
-                className="w-full flex items-center justify-between px-3 py-2 text-sm text-gray-700 hover:bg-gray-50"
-              >
-                <span>{category}</span>
-                <ChevronDown
-                  className={`w-4 h-4 transition-transform ${
-                    mobileOpenMenus[category] ? "rotate-180" : ""
-                  }`}
-                />
-              </button>
-              {mobileOpenMenus[category] && (
-                <div className="ml-4 space-y-1">
-                  {items.map((item, index) => (
-                    <div key={index}>
-                      <button
-                        onClick={() =>
-                          toggleMobileMenu(`${category}-${item.name}`)
-                        }
-                        className="w-full flex items-center justify-between px-3 py-2 text-sm text-gray-600 hover:bg-gray-50"
-                      >
-                        <span>{item.name}</span>
-                        {item.items && item.items.length > 0 && (
-                          <ChevronDown
-                            className={`w-4 h-4 transition-transform ${
-                              mobileOpenMenus[`${category}-${item.name}`]
-                                ? "rotate-180"
-                                : ""
-                            }`}
-                          />
-                        )}
-                      </button>
-                      {mobileOpenMenus[`${category}-${item.name}`] &&
-                        item.items &&
-                        item.items.length > 0 && (
-                          <div className="ml-4 space-y-1">
-                            {item.items.map((subItem, subIndex) => (
-                              <a
-                                key={subIndex}
-                                href="#"
-                                className="block px-3 py-2 text-xs text-gray-500 hover:bg-gray-50"
-                              >
-                                {subItem}
-                              </a>
-                            ))}
-                          </div>
-                        )}
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
-          ))}
+          {Object.entries(data).map(([category, items]) => {
+            const hasSub = items.length > 0;
+            return (
+              <div key={category}>
+                <button
+                  onClick={() => {
+                    if (hasSub) {
+                      toggleMobileMenu(category);
+                    } else {
+                      navigate(
+                        `/${category.toLowerCase().replace(/\s+/g, "-")}`
+                      );
+                    }
+                  }}
+                  className="w-full flex items-center justify-between px-3 py-2 text-sm text-gray-700 hover:bg-gray-50"
+                >
+                  <span>{category}</span>
+                  {hasSub && (
+                    <ChevronDown
+                      className={`w-4 h-4 transition-transform ${
+                        mobileOpenMenus[category] ? "rotate-180" : ""
+                      }`}
+                    />
+                  )}
+                </button>
+                {mobileOpenMenus[category] && (
+                  <div className="ml-4 space-y-1">
+                    {items.map((item, index) => {
+                      const hasItems = item.items && item.items.length > 0;
+                      return (
+                        <div key={index}>
+                          <button
+                            onClick={() => {
+                              if (hasItems) {
+                                toggleMobileMenu(`${category}-${item.name}`);
+                              } else {
+                                navigate(
+                                  `/${item.name
+                                    .toLowerCase()
+                                    .replace(/\s+/g, "-")}`
+                                );
+                              }
+                            }}
+                            className="w-full flex items-center justify-between px-3 py-2 text-sm text-gray-600 hover:bg-gray-50"
+                          >
+                            <span>{item.name}</span>
+                            {item.items && item.items.length > 0 && (
+                              <ChevronDown
+                                className={`w-4 h-4 transition-transform ${
+                                  mobileOpenMenus[`${category}-${item.name}`]
+                                    ? "rotate-180"
+                                    : ""
+                                }`}
+                              />
+                            )}
+                          </button>
+                          {mobileOpenMenus[`${category}-${item.name}`] &&
+                            item.items &&
+                            item.items.length > 0 && (
+                              <div className="ml-4 space-y-1">
+                                {item.items.map((subItem, subIndex) => (
+                                  <a
+                                    key={subIndex}
+                                    href={`/${subItem
+                                      .toLowerCase()
+                                      .replace(/\s+/g, "-")}`}
+                                    className="block px-3 py-2 text-xs text-gray-500 hover:bg-gray-50"
+                                  >
+                                    {subItem}
+                                  </a>
+                                ))}
+                              </div>
+                            )}
+                        </div>
+                      );
+                    })}
+                  </div>
+                )}
+              </div>
+            );
+          })}
         </div>
       )}
     </div>

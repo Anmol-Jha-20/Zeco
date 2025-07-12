@@ -11,6 +11,7 @@ import ProjectPage from "./pages/ProjectPage.jsx";
 import Manufacturing from "./pages/manufacturing.jsx";
 import ServicePage from "./pages/ServicePage.jsx";
 import HeatExchangerCoils from "./components/Products/HeatExchangerCoils/HeatExchangerCoils.jsx";
+import AirDistributionDucts from "./components/Products/AirDistributionDucts/AirDistributionDucts.jsx";
 
 const router = createBrowserRouter([
   {
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
       {
         path: "/heat-exchanger-coils",
         element: <HeatExchangerCoils />,
+      },
+      {
+        path: "/air-distribution-ducts",
+        element: <AirDistributionDucts />,
       },
     ],
   },

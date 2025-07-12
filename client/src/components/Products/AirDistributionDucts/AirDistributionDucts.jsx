@@ -1,12 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
-import ProductUSPs from "./ProductUsp";
-import HeatExchangerTypes from "./HeatExchangerTypes";
-import KeyHighlights from "./KeyHighlight";
-import HeatExchangerApplication from "./HeatExchangerApplication.jsx";
-import FAQComponent from "./FAQ.jsx";
+import AirDistributionProductUSPs from "./AirDistributionProductUSPs";
+import FAQComponent from "../HeatExchangerCoils/FAQ.jsx";
+import AirDistributionTypes from "./AirDistributionTypes.jsx";
+import AirDistributionKeyHighlights from "./AirDistributionKeyHighlight.jsx";
+import AirDistributionApplication from "./AirDistributionApplication.jsx";
+import PrecisionMaterials from "./AirDistributionPrecision.jsx";
+import FAQAirDistribution from "./AirDistributionFAQs.jsx";
 
-const HeatExchangerCoils = () => {
+const AirDistributionDucts = () => {
   return (
     <>
       <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
@@ -19,10 +21,10 @@ const HeatExchangerCoils = () => {
               transition={{ duration: 0.8, ease: "easeOut" }}
               className="relative"
             >
-              <div className="bg-white rounded-lg shadow-xl p-8 overflow-hidden">
+              <div className="bg-white rounded-lg shadow-xl overflow-hidden">
                 <img
-                  src="https://zecoaircon.com/wp-content/uploads/2025/07/coils.webp"
-                  alt="Heat Exchanger Coils"
+                  src="https://zecoaircon.com/wp-content/uploads/2025/04/rectangular-duct-831.jpg"
+                  alt="Air Distribution Ducts"
                 />
               </div>
             </motion.div>
@@ -42,7 +44,7 @@ const HeatExchangerCoils = () => {
                   transition={{ duration: 0.6, delay: 0.4 }}
                   className="text-4xl md:text-4xl lg:text-5xl font-bold text-blue-800 mb-6"
                 >
-                  Heat Exchanger Coils
+                  Air Distribution Ducts
                 </motion.h1>
 
                 <motion.p
@@ -51,7 +53,7 @@ const HeatExchangerCoils = () => {
                   transition={{ duration: 0.6, delay: 0.5 }}
                   className="text-xl md:text-2xl text-gray-600 font-medium mb-8"
                 >
-                  "Precision Cooling Meets Performance Engineering"
+                  "Engineered Ductwork for Superior Air Delivery"
                 </motion.p>
               </div>
 
@@ -63,20 +65,16 @@ const HeatExchangerCoils = () => {
                 className="text-gray-700 leading-relaxed text-lg space-y-4"
               >
                 <p>
-                  At Spire AirTech, we redefine heat transfer efficiency with
-                  our AHRI 410-certified Heat Exchangers—engineered for
-                  precision, reliability, and performance. Designed to deliver
-                  superior indoor thermal comfort, these high-performance units
-                  ensure seamless heat transfer between fluids without
-                  cross-contamination.
-                </p>
-
-                <p>
-                  Each unit is tested up to 450 PSIG and custom-built based on
-                  project requirements and logistics. As leading HVAC suppliers
-                  in India, we offer tailored solutions for industrial and
-                  commercial applications, combining durability, energy savings,
-                  and compliance into every design.
+                  Air Distribution Ducts by Zeco Aircon are designed to
+                  efficiently deliver conditioned air across all types of
+                  commercial, residential, and industrial spaces. Available in
+                  Rectangular, Round, and Oval profiles, and constructed using
+                  premium GI, SS, or Aluminum, our ducts ensure durability,
+                  energy efficiency, and optimal airflow. Whether you’re
+                  outfitting a hospital, data center, or high-rise office, Zeco
+                  customized duct systems offer unmatched quality, fast
+                  installation, and long-term performance in line with SMACNA
+                  standards.
                 </p>
               </motion.div>
 
@@ -88,20 +86,21 @@ const HeatExchangerCoils = () => {
                 className="pt-6"
               >
                 <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300 uppercase tracking-wide text-sm">
-                  CONSULT OUR AIR EXPERTS
+                  CONSULT OUR SPIRE EXPERTS
                 </button>
               </motion.div>
             </motion.div>
           </div>
         </div>
       </div>
-      <ProductUSPs />
-      <HeatExchangerTypes />
-      <KeyHighlights />
-      <HeatExchangerApplication />
-      <FAQComponent />
+      <AirDistributionProductUSPs />
+      <AirDistributionTypes />
+      <AirDistributionKeyHighlights />
+      <PrecisionMaterials />
+      <AirDistributionApplication />
+      <FAQAirDistribution />
     </>
   );
 };
 
-export default HeatExchangerCoils;
+export default AirDistributionDucts;
