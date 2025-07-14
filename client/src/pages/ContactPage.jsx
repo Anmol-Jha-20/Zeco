@@ -388,67 +388,6 @@ const ContactPage = () => {
                 </motion.div>
               </div>
 
-              {/* <div className="grid md:grid-cols-2 gap-6"> */}
-              {/* <motion.div className="relative" whileFocus={{ scale: 1.02 }}>
-                  <label
-                    htmlFor="subject"
-                    className="block text-sm font-semibold text-gray-700 mb-2"
-                  >
-                    Subject *
-                  </label>
-                  <input
-                    type="text"
-                    id="subject"
-                    name="subject"
-                    value={formData.subject}
-                    onChange={handleInputChange}
-                    className={`w-full px-4 py-3 border-2 rounded-lg transition-all duration-200 ${
-                      errors.subject
-                        ? "border-red-300 focus:border-red-500 focus:ring-red-200"
-                        : "border-gray-200 focus:border-blue-500 focus:ring-blue-200"
-                    } focus:ring-2 focus:outline-none`}
-                    placeholder="Enter message subject"
-                  />
-                  {errors.subject && (
-                    <motion.p
-                      className="text-red-500 text-xs mt-1 flex items-center"
-                      initial={{ opacity: 0, y: -10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                    >
-                      <AlertCircle className="w-3 h-3 mr-1" />
-                      {errors.subject}
-                    </motion.p>
-                  )}
-                </motion.div> */}
-
-              {/* <motion.div className="relative" whileFocus={{ scale: 1.02 }}>
-                  <label
-                    htmlFor="preferredTime"
-                    className="block text-sm font-semibold text-gray-700 mb-2"
-                  >
-                    Preferred Contact Time
-                  </label>
-                  <div className="relative">
-                    <Calendar className="absolute left-3 top-3 w-5 h-5 text-gray-400" />
-                    <select
-                      id="preferredTime"
-                      name="preferredTime"
-                      value={formData.preferredTime}
-                      onChange={handleInputChange}
-                      className="w-full pl-10 pr-4 py-3 border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none transition-all duration-200"
-                    >
-                      <option value="">Select preferred time</option>
-                      <option value="morning">Morning (9 AM - 12 PM)</option>
-                      <option value="afternoon">
-                        Afternoon (12 PM - 5 PM)
-                      </option>
-                      <option value="evening">Evening (5 PM - 8 PM)</option>
-                      <option value="anytime">Anytime</option>
-                    </select>
-                  </div>
-                </motion.div> */}
-              {/* </div> */}
-
               <motion.div className="relative" whileFocus={{ scale: 1.02 }}>
                 <label
                   htmlFor="message"
@@ -500,6 +439,11 @@ const ContactPage = () => {
                 )}
               </motion.div>
             </div>
+            <img
+              src="https://images.unsplash.com/photo-1596524430615-b46475ddff6e?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              className="hidden md:block mt-16 rounded"
+              alt=""
+            />
           </motion.div>
 
           {/* Contact Information & Map */}

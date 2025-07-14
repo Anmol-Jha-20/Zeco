@@ -252,6 +252,7 @@ function Header() {
                       navigate(
                         `/${category.toLowerCase().replace(/\s+/g, "-")}`
                       );
+                      setIsMobileMenuOpen(false);
                     }
                   }}
                   className="w-full flex items-center justify-between px-3 py-2 text-sm text-gray-700 hover:bg-gray-50"
@@ -281,6 +282,7 @@ function Header() {
                                     .toLowerCase()
                                     .replace(/\s+/g, "-")}`
                                 );
+                                setIsMobileMenuOpen(false);
                               }
                             }}
                             className="w-full flex items-center justify-between px-3 py-2 text-sm text-gray-600 hover:bg-gray-50"
@@ -301,15 +303,20 @@ function Header() {
                             item.items.length > 0 && (
                               <div className="ml-4 space-y-1">
                                 {item.items.map((subItem, subIndex) => (
-                                  <a
+                                  <button
                                     key={subIndex}
-                                    href={`/${subItem
-                                      .toLowerCase()
-                                      .replace(/\s+/g, "-")}`}
+                                    onClick={() => {
+                                      navigate(
+                                        `/${subItem
+                                          .toLowerCase()
+                                          .replace(/\s+/g, "-")}`
+                                      );
+                                      setIsMobileMenuOpen(false);
+                                    }}
                                     className="block px-3 py-2 text-xs text-gray-500 hover:bg-gray-50"
                                   >
                                     {subItem}
-                                  </a>
+                                  </button>
                                 ))}
                               </div>
                             )}
@@ -477,21 +484,24 @@ function Header() {
         {isMobileMenuOpen && (
           <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-lg border-t">
             <div className="px-4 py-2 space-y-2">
-              <a
-                href="#home"
+              <button
+                onClick={() => navigate("/")}
                 className="block py-2 text-gray-700 hover:text-red-500 font-medium"
               >
                 HOME
-              </a>
+              </button>
               <div className="py-2">
                 <button
-                  onClick={() => setIsAboutOpen(!isAboutOpen)}
+                  onClick={() => {
+                    navigate("/about-us");
+                    setIsMobileMenuOpen(false);
+                  }}
                   className="flex items-center w-full text-left text-gray-700 hover:text-red-500 font-medium"
                 >
                   ABOUT
-                  <ChevronDown className="ml-1 h-4 w-4" />
+                  {/* <ChevronDown className="ml-1 h-4 w-4" /> */}
                 </button>
-                {isAboutOpen && (
+                {/* {isAboutOpen && (
                   <div className="ml-4 mt-2 space-y-2">
                     <a
                       href="#our-story"
@@ -512,7 +522,7 @@ function Header() {
                       Certifications
                     </a>
                   </div>
-                )}
+                )} */}
               </div>
               <div className="py-2">
                 <button
@@ -563,18 +573,24 @@ function Header() {
                 data={manufacturingData}
               />
 
-              <a
-                href="#services"
+              <button
+                onClick={() => {
+                  navigate("/services");
+                  setIsMobileMenuOpen(false);
+                }}
                 className="block py-2 text-gray-700 hover:text-red-500 font-medium"
               >
                 SERVICES
-              </a>
-              <a
-                href="#contact"
+              </button>
+              <button
+                onClick={() => {
+                  navigate("/contact-us");
+                  setIsMobileMenuOpen(false);
+                }}
                 className="block py-2 text-gray-700 hover:text-red-500 font-medium"
               >
                 CONTACT
-              </a>
+              </button>
             </div>
           </div>
         )}

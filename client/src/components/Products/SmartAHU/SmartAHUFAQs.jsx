@@ -7,40 +7,49 @@ const SmartAHUFAQComponent = () => {
 
   const faqData = [
     {
-      question: "What are heat exchangers used for in HVAC systems?",
+      question: "What makes Smart AHU different from conventional AHUs?",
       answer:
-        "Heat exchangers transfer thermal energy between two fluids, usually air and water or refrigerant, without mixing them. They are used for both heating and cooling purposes in air handling units and fan coil systems.",
+        "Smart AHU integrates IoT, predictive maintenance, and real-time monitoring—unlike traditional units that rely on manual operation and periodic checks.",
     },
     {
-      question: "How do DX cooling coils work?",
+      question: "Is Smart AHU compatible with my existing BMS?",
       answer:
-        "DX (Direct Expansion) cooling coils work by allowing refrigerant to expand directly within the coil, absorbing heat from the air passing over it. The refrigerant evaporates as it absorbs heat, providing efficient cooling for HVAC systems.",
+        "Yes, it supports all major communication protocols like BACnet, Modbus, and KNX for seamless BMS integration.",
     },
     {
-      question:
-        "What is the difference between a chilled water coil and a DX coil?",
+      question: "Can I monitor and control Smart AHU remotely?",
       answer:
-        "Chilled water coils use water as the heat transfer medium, circulating chilled water through the coil to cool air. DX coils use refrigerant that expands directly in the coil. Chilled water systems are better for large applications, while DX systems are more efficient for smaller spaces.",
+        "Absolutely. Remote access is available via mobile app, web dashboard, or cloud-based platforms using Wi-Fi, Ethernet, or GSM.",
     },
     {
-      question: "Can heat exchangers be customized for my HVAC setup?",
+      question: "How energy efficient is Smart AHU?",
       answer:
-        "Yes, heat exchangers can be customized based on your specific HVAC requirements including size, capacity, materials, and configuration. Custom solutions ensure optimal performance and efficiency for your particular application.",
+        "With EC/VFD fans, optimized coils, and energy logging, it significantly reduces power consumption—improving your facility’s energy performance.",
     },
     {
-      question: "Where can I find HVAC suppliers in India for heat exchangers?",
+      question: "What types of filters are available?",
       answer:
-        "You can find HVAC suppliers for heat exchangers through industry directories, trade associations, online marketplaces, and local distributor networks. Many manufacturers have regional offices and authorized dealers across major Indian cities.",
+        "Standard G4/MERV 8 pre-filters with options for Fine, HEPA, Carbon, and Chemical filters based on your indoor air quality needs.",
     },
     {
-      question: "What makes Spire's Heat Exchangers energy-efficient?",
+      question: "Does Smart AHU support OTA (Over-the-Air) updates?",
       answer:
-        "Spire's heat exchangers feature advanced design elements like optimized fin patterns, high-quality materials, enhanced heat transfer surfaces, and precision manufacturing that maximize thermal efficiency while minimizing energy consumption.",
+        "Yes, OTA firmware updates are supported, allowing you to stay updated with the latest features and diagnostics.",
     },
     {
-      question: "Can the coils handle aggressive or corrosive environments?",
+      question: "What is the airflow range of Smart AHU?",
       answer:
-        "Yes, coils can be designed with specialized materials and coatings to handle aggressive or corrosive environments. Options include epoxy coatings, stainless steel construction, and specialized alloys depending on the specific environmental conditions.",
+        "The unit is scalable from 1,000 CFM to over 60,000 CFM, making it suitable for everything from small offices to large hospitals.",
+    },
+    {
+      question: "Is the construction suitable for hygienic applications?",
+      answer:
+        "Yes, Smart AHU features stainless steel components, corrosion-resistant coatings, and sloped drain pans, ideal for cleanroom or healthcare settings.",
+    },
+    {
+      question: "What safety standards does Smart AHU comply with?",
+      answer:
+        "Smart AHU is Eurovent, AHRI, CE, and ISO 9001:2015 certified, ensuring compliance with global safety, quality, and performance standards.",
     },
   ];
 
@@ -66,7 +75,7 @@ const SmartAHUFAQComponent = () => {
           >
             <button
               onClick={() => toggleItem(index)}
-              className="w-full px-6 py-4 text-left flex items-center justify-between bg-gray-50 hover:bg-gray-100 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-inset"
+              className="w-full px-6 py-4 text-left flex items-center justify-between cursor-pointer bg-gray-50 hover:bg-gray-100 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-inset"
             >
               <span
                 className={`text-base font-medium transition-colors duration-200 ${
